@@ -13,9 +13,10 @@ from worker import speech_to_text, text_to_speech, watsonx_process_message
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
+# First page of application, render main index page
 @app.route('/', methods=['GET'])
 def index():
-    return None
+    return render_template("index.html")
 
 @app.route('/speech-to-text', methods=['POST'])
 def speech_to_text_route():
