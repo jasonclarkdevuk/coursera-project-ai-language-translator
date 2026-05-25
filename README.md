@@ -1,4 +1,4 @@
-# AI Powered Language Translator
+# AI Powered Voice Translation Assistant
 
 This practice Coursera project involves a voice translation assistant which can convert spoken words to text, translate the text to another language using a LLM and then play the translated speech.
 
