@@ -2,6 +2,9 @@
 from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
 from ibm_watson_machine_learning.foundation_models import Model
 
+# Import requests library for API calls
+import requests
+
 # Within learning environment, a Watson API Key is not needed
 # Only project ID needs to be set in CloudIDE environment
 

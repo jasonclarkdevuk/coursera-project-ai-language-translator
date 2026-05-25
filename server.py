@@ -61,11 +61,7 @@ def process_message_route():
     # Send JSON response back containing the translation text and speech data
     # Create bespoke JSON response
     response = app.response_class(
-        response=json.dumps({
-                "watsonResponseText": watsonx_response_text,
-                "watsonResponseSpeech": watsonx_response_speech
-            }
-        ),
+        response=json.dumps({"watsonxResponseText": watsonx_response_text,"watsonxResponseSpeech": watsonx_response_speech}),
         status=200, # Success response
         mimetype="application/json" # Format of response as JSON
     )
